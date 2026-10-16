@@ -9,7 +9,7 @@
 ## LINKS
 - **[ANÚNCIO](https://www.airbnb.com.br/rooms/43811303?source_impression_id=p3_1725563193_P3JqSKx1Z7hlryIk&check_in=2024-10-01&guests=1&adults=1&check_out=2024-10-06)**
 
-- **[SITE](https://z4ffarani-educational.github.io/SEM2-CP2-FRONT-END-DESIGN/)**
+- **[SITE](https://z4ffarani-educational.github.io/CP2-FRONT-END-DESIGN/)**
 
 <br>
 
@@ -27,12 +27,12 @@ Foram criados dois arquivos para o site:
 # INSTRUÇÕES
 1. Em um terminal, clonar o repositório:
 ```bash
-git clone https://github.com/Z4FFARANI-EDUCATIONAL/SEM2-CP2-FRONT-END-DESIGN.git
+git clone https://github.com/Z4FFARANI-EDUCATIONAL/CP2-FRONT-END-DESIGN.git
 ```
 
 2. No terminal, navegar até a pasta do projeto:
 ```bash
-cd SEM2-CP2-FRONT-END-DESIGN/docs
+cd CP2-FRONT-END-DESIGN/docs
 ```
 
 3. Acessar o site executando o arquivo: `index.html`, ou o arquivo: `mobile.html`
