@@ -1,12 +1,5 @@
 # Anúncio do Airbnb · Front-End Design
 
-| Integrante | RM |
-|---|---|
-| [Guilherme Santos Nunes](https://github.com/sannunez) | RM558989 |
-| [Kaique Zaffarani](https://github.com/Z4ffarani) | RM556677 |
-| [Kairo da Silva Silvestre de Carvalho](https://github.com/KairoSilvestre) | RM558288 |
-| [Rafael Menezes Viana](https://github.com/vianafs) | — |
-
 Checkpoint 2 · 2024.2 · Engenharia de Software · FIAP
 
 ---
