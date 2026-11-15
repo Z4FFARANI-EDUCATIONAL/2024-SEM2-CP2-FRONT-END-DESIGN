@@ -1,78 +1,71 @@
-![banner](./docs/assets/banner.png)
+# Anúncio do Airbnb · Front-End Design
 
-# INTEGRANTES
-- **[Guilherme Santos Nunes](https://github.com/sannunez)**
-- **[Kaique Zaffarani](https://github.com/Z4ffarani)**
-- **[Kairo da Silva Silvestre de Carvalho](https://github.com/KairoSilvestre)**
-- **[Rafael Menezes Viana](https://github.com/vianafs)**
+| Integrante | RM |
+|---|---|
+| [Guilherme Santos Nunes](https://github.com/sannunez) | RM558989 |
+| [Kaique Zaffarani](https://github.com/Z4ffarani) | RM556677 |
+| [Kairo da Silva Silvestre de Carvalho](https://github.com/KairoSilvestre) | RM558288 |
+| [Rafael Menezes Viana](https://github.com/vianafs) | — |
 
-## LINKS
-- **[ANÚNCIO](https://www.airbnb.com.br/rooms/43811303?source_impression_id=p3_1725563193_P3JqSKx1Z7hlryIk&check_in=2024-10-01&guests=1&adults=1&check_out=2024-10-06)**
+Checkpoint 2 · 2024.2 · Engenharia de Software · FIAP
 
-- **[SITE](https://z4ffarani-educational.github.io/CP2-FRONT-END-DESIGN/)**
+---
 
-<br>
+## Esta entrega: Front-End Design
 
-# PROJETO
-Este projeto consiste na criação de um site que replica uma página de anúncio do site **[Airbnb](https://www.airbnb.com.br)** utilizando tecnologias de front-end. O site é totalmente responsivo, com uma experiência otimizada para variados dispositivos. A troca entre esses arquivos é feita dinamicamente com o uso de JavaScript, proporcionando uma transição suave e intuitiva.
+Criação de um site que replica uma página de anúncio do **[Airbnb](https://www.airbnb.com.br)** utilizando tecnologias de front-end. O site é totalmente responsivo, com uma experiência otimizada para variados dispositivos. A troca entre as versões é feita dinamicamente com JavaScript, proporcionando uma transição suave e intuitiva.
 
 Foram criados dois arquivos para o site:
+- `index.html` | Arquivo principal para a versão de computador (desktop). Contém a estrutura de layout e elementos voltados para telas maiores, como de tablets e notebooks.
+- `mobile.html` | Arquivo dedicado à versão de celular (mobile). Possui uma estrutura simplificada e adaptada para telas menores, garantindo dinamismo, usabilidade e performance.
 
-- `index.html` | Arquivo principal para a versão de computador do site (desktop). Contém a estrutura de layout e elementos voltados para telas maiores, como de tablets e notebooks.
+| Link | Onde |
+|---|---|
+| Site publicado | [z4ffarani-educational.github.io/2024-SEM2-CP2-FRONT-END-DESIGN](https://z4ffarani-educational.github.io/2024-SEM2-CP2-FRONT-END-DESIGN/) |
+| Anúncio original | [airbnb.com.br/rooms/43811303](https://www.airbnb.com.br/rooms/43811303) |
 
-- `mobile.html` | Arquivo dedicado à versão de celular do site (mobile). Possui uma estrutura simplificada e adaptada para telas menores, garantindo dinamismo, usabilidade e performance.
-  
-<br>
+## Prévia
 
-# INSTRUÇÕES
-1. Em um terminal, clonar o repositório:
+![prévia](./assets/preview.png)
+
+## Como executar
+
 ```bash
-git clone https://github.com/Z4FFARANI-EDUCATIONAL/CP2-FRONT-END-DESIGN.git
+git clone https://github.com/Z4FFARANI-EDUCATIONAL/2024-SEM2-CP2-FRONT-END-DESIGN.git
+cd 2024-SEM2-CP2-FRONT-END-DESIGN/docs
 ```
 
-2. No terminal, navegar até a pasta do projeto:
-```bash
-cd CP2-FRONT-END-DESIGN/docs
-```
+Depois, abra o arquivo `index.html` ou `mobile.html` no navegador.
 
-3. Acessar o site executando o arquivo: `index.html`, ou o arquivo: `mobile.html`
-
-<br>
-
-# FUNÇÕES
+## Funções
 
 `index.html` e `mobile.html`:
-- **Escutador de evento** | Utilizado para detectar a proporção da tela e alternar entre os arquivos HTML de acordo com o tamanho da janela do navegador. A função JavaScript `addEventListener` monitora o evento de redimensionamento (`resize`) e, ao identificar uma mudança de breakpoint (ponto de interrupção), carrega o arquivo correspondente, proporcionando uma experiência de navegação adequada a cada dispositivo.
-
-- **API para correspondência de tela** | A API do JavaScript `matchMedia` verifica quando a largura da tela atinge um breakpoint específico. Quando um breakpoint é identificado, o `script` carrega o arquivo HTML apropriado para garantir a melhor experiência de visualização para o usuário.
-
-- **Elementos gráficos em formato SVG** | Foram utilizados ícones e gráficos no formato SVG (gráficos vetorais escaláveis) para garantir uma alta qualidade visual em qualquer resolução de tela. SVGs são ideais para elementos como logos, ícones e gráficos que precisam ser escalonáveis e leves. Eles são embutidos diretamente nos arquivos HTML para facilitar o controle de estilos e animações através do CSS e JavaScript.
-
-<br>
+- **Escutador de evento** | Detecta a proporção da tela e alterna entre os arquivos HTML de acordo com o tamanho da janela do navegador. A função `addEventListener` monitora o evento de redimensionamento (`resize`) e, ao identificar uma mudança de breakpoint (ponto de interrupção), carrega o arquivo correspondente.
+- **API para correspondência de tela** | A API `matchMedia` verifica quando a largura da tela atinge um breakpoint específico. Quando um breakpoint é identificado, o `script` carrega o arquivo HTML apropriado.
+- **Elementos gráficos em formato SVG** | Ícones e gráficos em SVG (gráficos vetoriais escaláveis) garantem alta qualidade visual em qualquer resolução. Eles são embutidos diretamente nos arquivos HTML para facilitar o controle de estilos e animações através do CSS e JavaScript.
 
 `index.css` e `mobile.css`:
-- **Media queries** | Utilizadas para definir estilos específicos para diferentes tamanhos de tela. Isso assegura que o layout e os elementos da página se adaptem adequadamente a dispositivos de várias dimensões, oferecendo uma experiência de usuário consistente.
+- **Media queries** | Definem estilos específicos para diferentes tamanhos de tela, para que o layout se adapte a dispositivos de várias dimensões.
+- **Breakpoints** | Diferenciam a versão desktop da mobile, garantindo que as media queries e o JavaScript funcionem em conjunto para alterar o layout quando a largura da tela passa de um determinado valor.
+- **Unidades relativas** | `rem` (para tamanhos de fonte e espaçamentos) e `vh` (altura da viewport) criam um layout mais flexível e adaptável ao tamanho da tela.
 
-- **Breakpoints** | Os breakpoints foram definidos para diferenciar entre versão desktop e mobile, garantindo que as media queries e o JavaScript funcionem em conjunto para alterar o layout quando a largura da tela ultrapassa ou fica abaixo de um determinado valor.
+## Observações
 
-- **Unidades relativas** | Foram usadas unidades relativas como `rem` (para tamanhos de fonte e espaçamentos) e `vh` (altura da viewport) para criar um layout mais flexível e adaptável ao tamanho da tela do usuário.
-
-<br>
-
-# OBSERVAÇÕES
-- Para que o JavaScript consiga alternar entre os arquivos HTML corretamente, é necessário ajustar a barra de breakpoint do inspetor de elementos do navegador de forma lenta e gradual. Mudanças rápidas podem impedir a execução precisa do `script`, especialmente quando se trata de transições em breakpoints próximos.
+- Para que o JavaScript consiga alternar entre os arquivos HTML corretamente, é necessário ajustar a barra de breakpoint do inspetor de elementos do navegador de forma lenta e gradual. Mudanças rápidas podem impedir a execução precisa do `script`, especialmente em breakpoints próximos.
 - Os elementos de interação da página, como botões, links, mapas e calendários, não são totalmente fiéis ou funcionais e servem apenas a fins estéticos.
 - Todos os direitos de marca são reservados ao Airbnb, não havendo qualquer parceria direta com este projeto.
 - Foi solicitado o direito de uso de imagem tanto do anúncio quanto do anunciante.
 
-<br>
+---
 
-# TECNOLOGIAS
-[![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+## Tecnologias
 
-<br>
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
-# AGRADECIMENTOS
-- **[Alexandre Russi Junior](https://github.com/alexandrerussi)**
+---
+
+## Agradecimentos
+
+- [Alexandre Russi Junior](https://github.com/alexandrerussi)
